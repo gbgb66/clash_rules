@@ -1,30 +1,68 @@
-# n8n
-- DST-PORT,5678,DIRECT
+payload:
+  # VPS / инфра
+  - DOMAIN,my.fastvps.ru
+  - DOMAIN-SUFFIX,fastvps.ru
 
-# fastvps
-- DOMAIN,my.fastvps.ru,DIRECT
-- DOMAIN-SUFFIX,fastvps.ru,DIRECT
+  # Claude / Anthropic
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,anthropicusercontent.com
+  - DOMAIN-KEYWORD,claude
+  - DOMAIN-KEYWORD,anthropic
 
-# OpenAI
-- DOMAIN-SUFFIX,openai.com,PROXY
-- DOMAIN-SUFFIX,chatgpt.com,PROXY
+  # OpenAI / ChatGPT
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
+  - DOMAIN-KEYWORD,openai
+  - DOMAIN-KEYWORD,chatgpt
 
-# Claude
-- DOMAIN-SUFFIX,anthropic.com,PROXY
-- DOMAIN-SUFFIX,claude.ai,PROXY
+  # Google AI
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,ai.google.dev
+  - DOMAIN-SUFFIX,generativeai.google
+  - DOMAIN-SUFFIX,generativelanguage.googleapis.com
+  - DOMAIN-KEYWORD,gemini
 
-# Telegram
-- DOMAIN-SUFFIX,t.me,PROXY
-- DOMAIN-SUFFIX,telegram.org,PROXY
+  # AI инструменты
+  - DOMAIN-SUFFIX,lovable.dev
+  - DOMAIN-SUFFIX,lovable.ai
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-KEYWORD,perplexity
+  - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-KEYWORD,grok
+  - DOMAIN-SUFFIX,mistral.ai
+  - DOMAIN-KEYWORD,mistral
+  - DOMAIN-SUFFIX,huggingface.co
+  - DOMAIN-SUFFIX,huggingfaceusercontent.com
 
-# Instagram
-- DOMAIN-SUFFIX,instagram.com,PROXY
+  # Dev
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,githubassets.com
+  - DOMAIN-SUFFIX,npmjs.org
+  - DOMAIN-SUFFIX,registry.npmjs.org
 
-# WhatsApp
-- DOMAIN-SUFFIX,whatsapp.com,PROXY
+  # Мессенджеры
+  - DOMAIN-SUFFIX,telegram.org
+  - DOMAIN-SUFFIX,t.me
+  - DOMAIN-SUFFIX,telegram.me
+  - DOMAIN-KEYWORD,telegram
+  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-SUFFIX,cdninstagram.com
+  - DOMAIN-KEYWORD,instagram
+  - DOMAIN-SUFFIX,whatsapp.com
+  - DOMAIN-SUFFIX,whatsapp.net
+  - DOMAIN-KEYWORD,whatsapp
+  - DOMAIN-SUFFIX,discord.com
+  - DOMAIN-SUFFIX,discordapp.com
+  - DOMAIN-SUFFIX,discordapp.net
+  - DOMAIN-KEYWORD,discord
 
-# Discord
-- DOMAIN-SUFFIX,discord.com,PROXY
-
-# GitHub
-- DOMAIN-SUFFIX,github.com,PROXY
+  # YouTube
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-KEYWORD,youtube
