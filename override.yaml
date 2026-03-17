@@ -1,0 +1,34 @@
+rules:
+
+  # n8n
+  - DST-PORT,5678,DIRECT
+
+  # fastvps
+  - DOMAIN,my.fastvps.ru,DIRECT
+  - DOMAIN-SUFFIX,fastvps.ru,DIRECT
+
+  # OpenAI
+  - DOMAIN-SUFFIX,openai.com,PROXY
+  - DOMAIN-SUFFIX,chatgpt.com,PROXY
+
+  # Claude
+  - DOMAIN-SUFFIX,anthropic.com,PROXY
+  - DOMAIN-SUFFIX,claude.ai,PROXY
+
+  # Telegram
+  - DOMAIN-SUFFIX,t.me,PROXY
+  - DOMAIN-SUFFIX,telegram.org,PROXY
+
+  # Instagram
+  - DOMAIN-SUFFIX,instagram.com,PROXY
+
+  # WhatsApp
+  - DOMAIN-SUFFIX,whatsapp.com,PROXY
+
+  # Discord
+  - DOMAIN-SUFFIX,discord.com,PROXY
+
+  # GitHub
+  - DOMAIN-SUFFIX,github.com,PROXY
+
+  - MATCH,DIRECT
